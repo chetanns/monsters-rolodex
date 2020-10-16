@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### This adds the package gh-pages which helps to load and access static site in github
+
+`yarn add gh-pages` 
+
+### Add the below in the package.json within the script section
+
+`"predeploy":"yarn build",`
+
+`"deploy":"gh-pages -d build"`
+
+### Deploy the app in github
+
+`yarn deploy`
